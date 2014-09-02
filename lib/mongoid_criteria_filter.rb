@@ -1,8 +1,8 @@
 require 'rails'
 require 'mongoid'
 
-require 'initializers/criteria'
-require 'initializers/origin_optional'
+require 'mongoid_criteria_filter/criteria'
+require 'mongoid_criteria_filter/origin_optional'
 
 module MongoidCriteriaFilter
 
