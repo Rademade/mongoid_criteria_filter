@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
 
   s.add_dependency 'rails', '>= 4.0'
-  s.add_dependency 'mongoid', '>= 4.0'
+  s.add_dependency 'mongoid'
 
 end
