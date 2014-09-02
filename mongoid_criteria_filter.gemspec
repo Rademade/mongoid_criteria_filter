@@ -4,7 +4,7 @@ $:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name        = 'mongoid_criteria_filter'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.authors     = ['Vladislav Melanitskiy']
   s.email       = %w(co@rademade.com)
   s.homepage    = 'https://github.com/Rademade/mongoid_criteria_filter'
