@@ -1,0 +1,22 @@
+rvm:
+  - 1.9.3
+  - 2.0.0
+  - 2.1.0
+
+services:
+  - mongodb
+
+branches:
+  only:
+    - master
+
+before_install:
+  - npm install bower
+  - mysql -u root -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
+  - mysql -e "CREATE DATABASE rademade_admin_test;"
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+
+script:
+  - bundle exec rake app:rademade_admin:bower:install
+  - bundle exec rspec spec/
