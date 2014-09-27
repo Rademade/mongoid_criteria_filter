@@ -10,12 +10,5 @@ branches:
   only:
     - master
 
-before_install:
-  - npm install bower
-  - mysql -u root -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root');"
-  - mysql -e "CREATE DATABASE mongoid_criteria_filter_test;"
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-
 script:
   - bundle exec rspec spec/
