@@ -14,10 +14,10 @@ Gem::Specification.new do |s|
   s.description = 'It adds possibility for criteria callbacks (data filters)'
   s.licenses    = ['MIT']
 
-  s.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
-  s.require_path = 'lib'
-
-  s.add_dependency 'rails', '>= 4.0'
   s.add_dependency 'mongoid'
+
+  s.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
+  s.test_files = Dir.glob('spec/**/*')
+  s.require_path = 'lib'
 
 end

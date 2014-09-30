@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    mongoid_criteria_filter (0.0.3)
+      mongoid
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -110,20 +116,16 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
+    rspec (3.0.0)
+      rspec-core (~> 3.0.0)
+      rspec-expectations (~> 3.0.0)
+      rspec-mocks (~> 3.0.0)
     rspec-core (3.0.4)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.4)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.0.0)
     rspec-mocks (3.0.4)
-      rspec-support (~> 3.0.0)
-    rspec-rails (3.0.2)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (~> 3.0.0)
-      rspec-expectations (~> 3.0.0)
-      rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
     slop (3.6.0)
@@ -142,4 +144,5 @@ DEPENDENCIES
   factory_girl_rails
   jazz_hands
   mongoid
-  rspec-rails (~> 3.0.0)
+  mongoid_criteria_filter!
+  rspec (~> 3.0.0)

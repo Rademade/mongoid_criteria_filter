@@ -1,4 +1,3 @@
-require 'rails'
 require 'mongoid'
 
 require 'mongoid_criteria_filter/criteria'
