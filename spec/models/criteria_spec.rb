@@ -5,9 +5,9 @@ describe Mongoid::Criteria do
   describe '#add_filter' do
 
     let!(:users) do
-      FactoryGirl.create :user, :name => 'Name1'
-      FactoryGirl.create :user, :name => 'Name2'
-      FactoryGirl.create :user, :name => 'Name3'
+      User.create :name => 'Name1'
+      User.create :name => 'Name2'
+      User.create :name => 'Name3'
     end
 
     context 'without additional order' do

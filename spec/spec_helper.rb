@@ -5,10 +5,8 @@ MODELS = File.join(File.dirname(__FILE__), 'app/models')
 $LOAD_PATH.unshift(MODELS)
 
 require 'mongoid_criteria_filter'
-require 'action_controller'
 require 'rspec'
 require 'database_cleaner'
-require 'factory_girl_rails'
 
 ENV['MONGOID_SPEC_HOST'] ||= 'localhost'
 ENV['MONGOID_SPEC_PORT'] ||= '27017'
@@ -24,9 +22,6 @@ CONFIG = {
     }
   }
 }
-
-FactoryGirl.definition_file_paths << File.join(File.dirname(__FILE__), 'factories')
-FactoryGirl.reload
 
 Mongoid.configure do |config|
   config.load_configuration(CONFIG)
